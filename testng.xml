@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" thread-count="2" parallel="tests">
+    <test  name="Chrome">
+        <parameter name="browser" value="Chrome"></parameter>
+
+<!--        include all methods inside this class,this will not take those tests which are enabled as false
+             The value in the parameter is a string-->
+        <classes><class name="Framework.TestScripts.LoginTest">
+        </class>
+        </classes>
+    </test>
+    <test  name="Firefox">
+        <parameter name="browser" value="firefox"></parameter>
+
+        <!--        include all methods inside this class,this will not take those tests which are enabled as false
+                     The value in the parameter is a string-->
+        <classes><class name="Framework.TestScripts.LoginTest">
+        </class>
+        </classes>
+    </test>
+</suite>
